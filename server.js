@@ -1,11 +1,9 @@
 const http = require('http');
 const port = 8080;
-
-
 //Basic HTTP httpServer
 
 const httpServer = http.createServer((req, res) => {
-  //console.log (req);
+    //console.log (req);
 
   //const headers = res.getHeaders();
   const headers=req.rawHeaders;
@@ -19,6 +17,6 @@ res.end('ok');
 });
 
 httpServer.listen(port, () => {
-  console.log('server runnimg');
+console.log('server runnimg');
 
 });
